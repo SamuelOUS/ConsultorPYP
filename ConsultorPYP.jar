@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
+public class PicoYPlacaConsultor {
+
+    private static final Map<Character, String> restricciones = new HashMap<>();
+
+    static {
+        // Definimos las restricciones por último dígito de la placa
+        restricciones.put('1', "Lunes");
+        restricciones.put('2', "Lunes");
+        restricciones.put('3', "Martes");
+        restricciones.put('4', "Martes");
+        restricciones.put('5', "Miércoles");
+        restricciones.put('6', "Miércoles");
+        restricciones.put('7', "Jueves");
+        restricciones.put('8', "Jueves");
+        restricciones.put('9', "Viernes");
+        restricciones.put('0', "Viernes");
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la placa de su vehículo (sin guiones ni espacios):");
+        String placa = scanner.nextLine().toUpperCase();
+        scanner.close();
+
+        
+    }
+}
