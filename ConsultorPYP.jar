@@ -8,7 +8,7 @@ public class PicoYPlacaConsultor {
     private static final Map<Character, String> restricciones = new HashMap<>();
 
     static {
-        // Definimos las restricciones por último dígito de la placa
+       
         restricciones.put('1', "Lunes");
         restricciones.put('2', "Lunes");
         restricciones.put('3', "Martes");
